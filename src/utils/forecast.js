@@ -2,7 +2,7 @@ const request = require('request')
 
 
 const forecast = (latitude,longitude, callback) => {
-    const url = 'http://api.weatherapi.com/v1/current.json?key=58cf65c931a74c64aae141221212503&q='+ latitude + ',' + longitude;
+    const url = 'http://api.weatherapi.com/v1/current.json?key=cc9e2380423b47c094254140220607&q='+ latitude + ',' + longitude;
 
     request({ url , json:true }, (error,{body}) => {
         if(error){
